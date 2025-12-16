@@ -6,7 +6,6 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
-    base: mode === 'production' ? '/copy_paste_heb/' : '/',
     plugins: [react()],
     server: {
       port: 3000,
